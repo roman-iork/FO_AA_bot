@@ -1,0 +1,16 @@
+.idea
+todo
+token.txt
+username.txt
+password.txt
+src/main/resources/storage.json
+src/main/resources/photoIds.json
+testPaths.txt
+prodPaths.txt
+botName.txt
+
+# Ignore Gradle project-specific cache directory
+.gradle
+
+# Ignore Gradle build output directory
+build

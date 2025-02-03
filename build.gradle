@@ -1,0 +1,29 @@
+plugins {
+    id "io.freefair.lombok" version "8.6"
+    id 'application'
+    id "com.github.johnrengelman.shadow" version "8.1.1"
+}
+
+application {
+    mainClass = 'main.Main'
+}
+
+group = 'iork_dev.code'
+version = '2'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.postgresql:postgresql:42.7.3'
+    implementation 'org.telegram:telegrambots:6.9.7.1'
+    implementation 'org.slf4j:slf4j-simple:2.0.13'
+    implementation 'org.jsoup:jsoup:1.18.3'
+    testImplementation platform('org.junit:junit-bom:5.10.0')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+}
+
+test {
+    useJUnitPlatform()
+}
